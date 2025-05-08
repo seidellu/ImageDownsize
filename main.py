@@ -13,7 +13,7 @@ ARGS = parser.parse_args()
 
 if __name__ == "__main__":
     path = Path(ARGS.path)
-    optimizing_rate = int(ARGS.rate*100)
+    optimizing_rate = int(float(ARGS.rate)*100)
     im_size = ARGS.size
 
     #load image
